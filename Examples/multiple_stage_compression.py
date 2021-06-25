@@ -17,8 +17,7 @@ import numpy as np
 
 # %%
 
-saveDir = r'C:\Users\mstan\Google Drive\Research\Code\SPM\Simulation Experiements\800nm_multiple_stage_compression'
-
+saveDir = ''
 # %%
 
 # 1 mJ beamline setup. 1 mm material

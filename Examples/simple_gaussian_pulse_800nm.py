@@ -17,7 +17,7 @@ beam_dia = 11.7*4.5/20.0
 ftl_duration = 30.0
 
 # %%
-pulse_0 = spym.generateIntensityGaussianSpectrum(freq_fwhm = 441.0/ftl_duration,center_freq=299700.0/800.0,GDD=GDD,TOD=TOD,FOD=FOD,EPP=0.001)
+pulse_0 = spym.generateIntensityGaussianSpectrum(freq_fwhm = 441.0/ftl_duration,center_freq=299700.0/800.0,phase_coef=[GDD,TOD,FOD],EPP=0.001)
 fiber = spym.createFSFiber(Length=Length, beam_dia=beam_dia)
 y,AW,AT,pulse_1 = spym.runNLOSim(pulse_0,fiber,Raman=NLEffects,Steep=NLEffects)
 
